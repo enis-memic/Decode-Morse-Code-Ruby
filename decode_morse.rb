@@ -44,7 +44,6 @@ end
 
 puts decode_word('-- -.--') # => MY
 
-
 def decode(sentence)
   words = sentence.split('   ')
   message = ''
