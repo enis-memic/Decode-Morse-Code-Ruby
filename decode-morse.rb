@@ -34,3 +34,15 @@ def decode_char (char)
 end
 
 puts decode_char(".-") # => A
+
+# split letters into an array 
+# loop to decode_letter, 
+# join decoded words
+def decode_word(word)
+  decoded = ""
+  morse_chars = word.split.each { |l| decoded += decode_char(l) }
+  decoded
+end
+
+puts decode_word("-- -.--") # => MY
+
